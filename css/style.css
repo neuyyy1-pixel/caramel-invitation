@@ -1,0 +1,54 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+
+
+
+
+.invitation-container {
+    max-width: 600px;      
+    margin: 0 auto;         
+    background-color: #fff; 
+}
+
+
+.slide-item {
+    width: 100%;
+    display: flex; 
+}
+
+.slide-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+
+    .invitation-container {
+        display: flex;                       /* 가로로 나열 */
+        overflow-x: auto;                    /* 가로 스크롤 허용 */
+        scroll-snap-type: x mandatory;       /* 스크롤 시 자석처럼 딱 붙게 */
+        -webkit-overflow-scrolling: touch;   /* 아이폰 부드러운 스크롤 */
+        scrollbar-width: none;               /* 파이어폭스 스크롤바 숨김 */
+    }
+    
+    .invitation-container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .slide-item {
+        min-width: 100%;             /* 화면 꽉 차게 */
+        scroll-snap-align: start;    /* 시작점에 딱 붙기 */
+    }
+
+}
