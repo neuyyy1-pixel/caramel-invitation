@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 카라멜에셋 체육대회 초대장</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: '맑은고딕'
+        }
+
+
+    @media (max-width: 768px) {
+
+        .invitation-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .slide-item {
+            width: 100%;
+            display: flex;
+        }
+
+        .slide-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .invitation-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .invitation-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide-item {
+            min-width: 100%;
+            scroll-snap-align: start;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="invitation-container">
+
+    <div class="slide-item">
+    <img src="static/image/1.PNG" alt="메인 포스터">
+    </div>
+
+    <div class="slide-item">
+    <img src="static/image/2.PNG" alt="초대 문구">
+    </div>
+
+    <div class="slide-item">
+    <img src="static/image/3.PNG" alt="제공 내역">
+    </div>
+
+    <div class="slide-item">
+    <img src="static/image/4.PNG" alt="오시는 길">
+    </div>
+    </div>
+
+</body>
+</html>
